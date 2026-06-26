@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: netflixfile
+    ports:
+      - "8200:80"
+
+
+  backendend:
+    build:
+      context: .
+      dockerfile: tomcatfile
+    ports:
+      - "8500:8080"
